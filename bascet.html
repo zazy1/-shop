@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Манга</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/accordion.css">
+</head>
+
+<body class="b2">
+    <header class="header2">
+        <div class="container2">
+            <nav class="nav">
+                <h1 class="logo2">M</h1>
+
+                <ul class="nav_list2">
+                    <li class="nav_item2">
+                        <a href="#hero_block" class="nav_link2">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="nav_item2">
+                        <a href="#about" class="nav_link2">ОБ АВТОРЕ</a>
+                    </li>
+                    <li class="nav_item2">
+                        <a href="#gallary" class="nav_link2">ВСЕ ЧАСТИ</a>
+                    </li>
+                    <li class="nav_item2">
+                        <a href="#video" class="nav_link2">ПРОГРЕСС</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="video-bg">
+            <video id="video_id" class="video" autoplay muted loop>
+                <source src="VIDEO/VideoM.webm" type="video/webm">
+            </video>
+            <div class="video_content">
+                <h2 class="video_h">«Человек-бензопила» (яп. チェンソーマン Тенсо:ман) — манга, написанная и
+                    проиллюстрированная Тацуки
+                    Фудзимото. Первая часть публиковалась в журнале Shueisha Weekly Shonen Jump с 3 декабря 2018 по 14
+                    декабря 2020 года[5] , а вторая часть публикуется в онлайн-журнале Shonen Jump+ издательства
+                    Shueisha с 13 июля 2022 года. На апрель 2023 года её главы собраны в четырнадцать танкобонов.
+                    Премьера адаптации в формате аниме-телесериала, снятого студией MAPPA, состоялась 11 октября и
+                    завершилась 27 декабря 2022 года.
+
+                    По состоянию на январь 2023 года тираж манги превысил 23 миллионов экземпляров[6]. В 2021 году манга
+                    получила 66-ю премию «Сёгакукан» в категории «сёнэн»[7], а также премию Harvey Awards в категории
+                    «Лучшая манга» в 2021 и 2022 году.
+                </h2>
+            </div>
+            <div class="video_contrl">
+                <button class="video-bg__btn" id="stop" onclick="cl_stop()">stop</button>
+                <button class="video-bg__btn" id="audio" onclick="cl_audio()">audio</button>
+                <button class="video-bg__btn" id="prev" onclick="cl_prev()">prev</button>
+                <button class="video-bg__btn" id="next" onclick="cl_next()">next</button>
+            </div>
+        </section>
+        <div class="container">
+            <div class="header_menu" id="menu">
+                <ul class="menu_list">
+                    <li class="menu_item">
+                        <a class="menu_list" href="#">Вход</a>
+                    </li>
+                    <li class="menu_item">
+                        <a class="menu_list" href="#">Регистрация</a>
+                    </li>
+                    <li class="menu_item">
+                        <a class="menu_list" href="#">Корзина</a>
+                    </li>
+                    <li class="menu_item">
+                        <a class="menu_list" href="#">Акции</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container_gds"></div>
+        <section class="gds">
+            <h1 class="gds_titl">Корзина</h1>
+            <ul class="gds_ul">
+                <li class="gds_li">
+                    <p class="gds_p">Пусто</p>
+                </li>
+            </ul>
+            <button class="gds_button" onclick="product()">Обновить</button>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="footer_content">
+                <h4 class="footer_title">Пирогов Ян</h4>
+                <p class="footer_text">&copy; 2023. Все права защищены</p>
+            </div>
+            <ul class="footer_list">
+                <li class="footer_item">
+                    <a href="https://vk.com/yan018" class="footer_link">
+                        <img src="img/vk1.png" class="footer_icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <section class="watch">
+            <div class="container_watch">
+                <div class="content_watch" id="watch">
+
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="script/slider.js"></script>
+    <script src="script/menu.js"></script>
+    <script src="script/accordion.js"></script>
+    <script src="script/burger.js"></script>
+    <script src="script/watch.js"></script>
+    <script src="script/video_contrl.js"></script>
+    <script src="script/gds.js"></script>
+</body>

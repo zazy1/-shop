@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Манга</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/accordion.css">
+</head>
+
+<body class="b2">
+	<header class="header2">
+		<div class="container2">
+			<nav class="nav">
+				<h1 class="logo2">M</h1>
+
+				<ul class="nav_list2">
+					<li class="nav_item2">
+						<a href="#hero_block" class="nav_link2">ГЛАВНАЯ</a>
+					</li>
+					<li class="nav_item2">
+						<a href="#about" class="nav_link2">ОБ АВТОРЕ</a>
+					</li>
+					<li class="nav_item2">
+						<a href="#gallary" class="nav_link2">ВСЕ ЧАСТИ</a>
+					</li>
+					<li class="nav_item2">
+						<a href="#video" class="nav_link2">ПРОГРЕСС</a>
+					</li>
+				</ul>
+				<div class="burger" onclick="showMenu()">
+					<div class="burger__line"></div>
+					<div class="burger__line"></div>
+					<div class="burger__line"></div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<section class="basket">
+			<div class="basket_content">
+				<button class="basket_btn">
+					<img src="IMG/корзина.png" alt="" class="basket_img">
+				</button>
+				<p class="basket_price">0</p>
+			</div>
+		</section>
+		<section class="video-bg">
+			<video id="video_id" class="video" autoplay muted loop>
+				<source src="VIDEO/VideoM.webm" type="video/webm">
+			</video>
+			<div class="video_content">
+				<h2 class="video_h">«Человек-бензопила» (яп. チェンソーマン Тенсо:ман) — манга, написанная и
+					проиллюстрированная Тацуки
+					Фудзимото. Первая часть публиковалась в журнале Shueisha Weekly Shonen Jump с 3 декабря 2018 по 14
+					декабря 2020 года[5] , а вторая часть публикуется в онлайн-журнале Shonen Jump+ издательства
+					Shueisha с 13 июля 2022 года. На апрель 2023 года её главы собраны в четырнадцать танкобонов.
+					Премьера адаптации в формате аниме-телесериала, снятого студией MAPPA, состоялась 11 октября и
+					завершилась 27 декабря 2022 года.
+
+					По состоянию на январь 2023 года тираж манги превысил 23 миллионов экземпляров[6]. В 2021 году манга
+					получила 66-ю премию «Сёгакукан» в категории «сёнэн»[7], а также премию Harvey Awards в категории
+					«Лучшая манга» в 2021 и 2022 году.
+				</h2>
+			</div>
+			<div class="video_contrl">
+				<button class="video-bg__btn" id="stop" onclick="cl_stop()">stop</button>
+				<button class="video-bg__btn" id="audio" onclick="cl_audio()">audio</button>
+				<button class="video-bg__btn" id="prev" onclick="cl_prev()">prev</button>
+				<button class="video-bg__btn" id="next" onclick="cl_next()">next</button>
+			</div>
+		</section>
+		<div class="container">
+			<button class="btn-menu" id="btn_menu">Меню</button>
+			<div class="header_menu" id="menu">
+				<ul class="menu_list">
+					<li class="menu_item">
+						<a class="menu_list" href="#">Вход</a>
+					</li>
+					<li class="menu_item">
+						<a class="menu_list" href="#">Регистрация</a>
+					</li>
+					<li class="menu_item">
+						<a class="menu_list" href="#">Корзина</a>
+					</li>
+					<li class="menu_item">
+						<a class="menu_list" href="#">Акции</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<section class="shop">
+			<div class="container">
+				<h1 class="shop_title">Манга</h1>
+				<div class="itc-slider" data-slider="itc-slider">
+					<div class="itc-slider-wrapper">
+						<div class="itc-slider-items">
+							<div class="itc-slider-item">
+								<img src="img/2869449.jpg" alt="" class="shop_img">
+							</div>
+							<div class="itc-slider-item">
+								<img src="img/33.png" alt="" class="shop_img">
+							</div>
+							<div class="itc-slider-item">
+								<img src="img/22.png" alt="" class="shop_img">
+							</div>
+						</div>
+					</div>
+					<!-- Кнопки для перехода к предыдущему и следующему слайду -->
+					<button class="itc-slider-btn itc-slider-btn-prev"></button>
+					<button class="itc-slider-btn itc-slider-btn-next"></button>
+				</div>
+
+				<div class="accordion" id="accordion-1">
+					<div class="accordion__item">
+						<div class="accordion__header">
+							<h2 class="shop_title">Человек-бензопила. Книга 1. Пес и бензопила. Бензопила против
+								нетопыря.</h2>
+						</div>
+						<div class="accordion__body">
+
+							<div class="accordion__item">
+								<div class="accordion__header">
+									<h2 class="shop_title">О товаре</h2>
+								</div>
+								<div class="accordion__body">
+									<p class="shop_text">«Человек-бензопила» (яп. チェンソーマン Тенсо:ман) — манга, написанная
+										и
+										проиллюстрированная Тацуки Фудзимото. Первая часть публиковалась в журнале
+										Shueisha
+										Weekly Shonen
+										Jump с 3 декабря 2018 по 14 декабря 2020 года[5] , а вторая часть публикуется в
+										онлайн-журнале
+										Shonen Jump+ издательства Shueisha с 13 июля 2022 года. На апрель 2023 года её
+										главы
+										собраны в
+										четырнадцать танкобонов. Премьера адаптации в формате аниме-телесериала, снятого
+										студией
+										MAPPA,
+										состоялась 11 октября и завершилась 27 декабря 2022 года.
+									</p>
+
+									<div class="accordion" id="accordion-1">
+										<div class="accordion__item">
+											<div class="accordion__header">
+												<h2 class="shop_title">Цена</h2>
+											</div>
+											<div class="accordion__body">
+												<p class="shop_text sp">893 рублей
+												</p>
+												<button class="shop_btn" id="btn" onclick="buy()">Купить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+		</section>
+		<section class="maps">
+			<div class="container">
+				<h1 class="maps_title">Точки самовывоза</h1>
+				<div class="container_google">
+					<h3 class="google_maps">Гугл карта</h3>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8925.432574207156!2d92.86080842462631!3d55.99514881953088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7ae26c32b909f%3A0x533eeda5c02f9222!2z0J7MgdGB0YLRgNC-0LIg0J7MgdGC0LTRi9GF0LAsINCa0YDQsNGB0L3QvtGP0YDRgdC60LjQuSDQutGA0LDQuSwgNjYwMDEy!5e0!3m2!1sru!2sru!4v1688115730971!5m2!1sru!2sru"
+						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="container_yandex">
+					<h3 class="yandex_map">Яндекс карта</h3>
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab0b03a078a0aebbdc6e6cc3fb0a3bf791cbbb4738fb81ab4dc762a0026b52dfe&amp;source=constructor"
+						width="600" height="450" frameborder="0"></iframe>
+				</div>
+			</div>
+		</section>		
+	</main>
+
+	<footer class="footer">
+		<div class="container_footer">
+			<div class="footer_content">
+				<h4 class="footer_title">Пирогов Ян</h4>
+				<p class="footer_text">&copy; 2023. Все права защищены</p>
+			</div>
+			<ul class="footer_list">
+				<li class="footer_item">
+					<a href="https://vk.com/yan018" class="footer_link">
+						<img src="img/vk1.png" class="footer_icon">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<section class="watch">
+			<div class="container_watch">
+				<div class="content_watch" id="watch">
+
+				</div>
+			</div>
+		</section>
+	</footer>
+	<script src="script/script.js"></script>
+	<script src="script/slider.js"></script>
+	<script src="script/menu.js"></script>
+	<script src="script/accordion.js"></script>
+	<script src="script/burger.js"></script>
+	<script src="script/watch.js"></script>
+	<script src="script/video_contrl.js"></script>
+
+</body>
+
+</html>
